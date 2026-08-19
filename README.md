@@ -1,6 +1,6 @@
 # Projeto_Prog_Software
 
-#Proposta do Projeto — StudyAI Planner
+# Proposta do Projeto — StudyAI Planner
 
 O StudyAI Planner é uma proposta de sistema voltado para estudantes que busca facilitar a organização e o planejamento dos estudos em uma única plataforma. O sistema permitirá que o aluno cadastre suas matérias, informe seu nível de dificuldade em cada uma delas, registre datas de provas e trabalhos e indique a quantidade de horas disponíveis para estudar por dia. A partir dessas informações, o sistema será responsável por organizar um cronograma personalizado, priorizando conteúdos de maior dificuldade e avaliações com datas mais próximas.
 
