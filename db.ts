@@ -1,6 +1,7 @@
 import { Database } from "bun:sqlite";
 
 const db = new Database("database.sqlite");
+
 const query = db.query(`
     CREATE TABLE IF NOT EXISTS users (
         id              INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -9,6 +10,7 @@ const query = db.query(`
         password_hash   TEXT NOT NULL
     );
 `);
+
 query.run();
 
 const queryPerfil = db.query(`
@@ -16,9 +18,9 @@ const queryPerfil = db.query(`
         id_perfil        INTEGER PRIMARY KEY AUTOINCREMENT,
         id_usuario       INTEGER NOT NULL UNIQUE,
         foto_perfil      TEXT,
-        curso            TEXT,
-        objetivo_estudo  TEXT,
-        data_nascimento  TEXT,
+        curso             TEXT,
+        objetivo_estudo   TEXT,
+        data_nascimento   TEXT,
 
         FOREIGN KEY (id_usuario)
             REFERENCES users(id)
@@ -28,4 +30,4 @@ const queryPerfil = db.query(`
 
 queryPerfil.run();
 
-export { db }
+export { db };
